@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+            <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+            <button onclick="extract()" id="valider" name ="valider">Valider</button>
+        </form>
+        <script>
+            function extract() {
+                var premierNombre = document.getElementById("premier_nombre").value;
+                var deuxiemeNombre = document.getElementById("deuxieme_nombre").value;
+                var resultat = Math.floor(premierNombre) * deuxiemeNombre;
+            
+                alert(resultat);
+            }
+        </script>
+    </body>
+</html>
